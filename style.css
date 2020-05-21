@@ -1,0 +1,69 @@
+body {
+    margin: 0px;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    background: rgba(135, 154, 173, 0.74);
+    padding: 10px;
+}
+
+.logo {
+    height: 40px;
+    margin: 0px 20px;
+}
+
+a {
+    margin: 20px;   
+    text-decoration: none;
+    color: black;
+}
+
+.picture {
+    background: url(images/svarka-argonom.jpg) center center / cover no-repeat;
+    height: 300px;
+    border-top: 3px solid rgb(255, 0, 0);
+    border-bottom: 3px solid rgb(255, 0, 0);
+}
+
+.content {
+    padding: 10px 40px;
+    background: rgba(135, 154, 173, 0.473);
+}
+
+h1 {
+    margin: 0px;
+    text-align: center;
+    background: rgba(135, 154, 173, 0.74);
+    padding: 20px;
+}
+
+p {
+    
+    text-align: justify;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.bottom {
+    background: rgba(135, 154, 173, 0.74);
+    padding: 20px 40px;
+    border-top: 3px solid red;
+}
+
+.bottom-position {
+    display: flex;
+    justify-content: space-between;
+}
+
+#up-arrow {
+    width: 30px;
+}
