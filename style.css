@@ -7,63 +7,157 @@ body {
     margin: 0 auto;
 }
 
-.top {
+.header {
     display: flex;
     align-items: center;
-    background: rgba(135, 154, 173, 0.74);
-    padding: 10px;
+    justify-content: space-between;
+    background: rgba(0, 0, 139, 0.753);
+    padding: 20px;
+    border-bottom: 3px solid white;
 }
 
-.logo {
-    height: 40px;
-    margin: 0px 20px;
+.header-logo {
+    background: url(images/logo.png) center center / contain no-repeat;
+    padding: 16px;
+    margin-right: 15px;
+    transition: 1100ms;
 }
 
-a {
-    margin: 20px;   
+.header-logo:hover {
+    transform: rotate(360deg);
+}
+
+.header-link {
+    color: white;
     text-decoration: none;
-    color: black;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+    color: orange;
 }
 
 .picture {
-    background: url(images/svarka-argonom.jpg) center center / cover no-repeat;
-    height: 300px;
-    border-top: 3px solid rgb(255, 0, 0);
-    border-bottom: 3px solid rgb(255, 0, 0);
-}
-
-.content {
-    padding: 10px 40px;
-    background: rgba(135, 154, 173, 0.473);
+    background: url(images/main.jpg) center center / cover no-repeat;
+    height: 500px;
 }
 
 h1 {
-    margin: 0px;
     text-align: center;
-    background: rgba(135, 154, 173, 0.74);
-    padding: 20px;
-}
-
-p {
-    
-    text-align: justify;
-}
-
-h2 {
+    background-color: rgba(0, 0, 139, 0.753);
+    color: white;
     margin: 0px;
+    padding: 15px;
 }
 
-.bottom {
-    background: rgba(135, 154, 173, 0.74);
+.content {
+    padding: 40px;
+    border-left: 4px solid  rgba(0, 0, 139, 0.753);
+    border-right: 4px solid  rgba(0, 0, 139, 0.753);
+    font-size: 18px;
+    background-color: powderblue;
+}
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: powderblue;
+    border: 2px solid  rgba(0, 0, 139, 0.753);
+}
+
+.blocks-item {
+    padding:  10px;
+    border: 2px solid  rgba(0, 0, 139, 0.753);
+    width: 33.33333%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.blocks-russia {
+    background: url(images/moscow.png) center center / contain no-repeat;
+    height: 150px;
+}
+
+.blocks-europa {
+    background: url(images/big-ben.png) center center / contain no-repeat;
+    height: 150px;
+}
+
+.blocks-africa {
+    background: url(images/pyramids.png) center center / contain no-repeat;
+    height: 150px;
+}
+
+.blocks-north-america {
+    background: url(images/north-america.png) center center / contain no-repeat;
+    height: 150px;
+}
+
+.blocks-south-america {
+    background: url(images/south-america.png) center center / contain no-repeat;
+    height: 150px;
+}
+
+.blocks-australia {
+    background: url(images/kangaroo.png) center center / contain no-repeat;
+    height: 150px;
+}
+
+.blocks-text {
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: orange;
+    width: 50px;
+}
+
+.footer {
+    background-color:  rgba(0, 0, 139, 0.753);
+    color: white;
     padding: 20px 40px;
-    border-top: 3px solid red;
-}
-
-.bottom-position {
+    line-height: 0.8;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
 }
 
-#up-arrow {
-    width: 30px;
+#footer-left-h2 {
+    color: orange;
+}
+
+#footer-left-adress {
+    color: orange;
+}
+
+.footer-logo {
+    background: url(images/logo.png) center center / contain no-repeat;
+    width: 100px;
+    transition: 1100ms;
+}
+
+.footer-logo:hover {
+    transform: rotate(-360deg);
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+h2 {
+  font-size: 30px;
 }
