@@ -11,12 +11,26 @@
         <div class="header">
             <a href="#footer-logo" class="header-logo"></a>
             <div class="header-navigation">
-                <a href="#" class="header-link">Главная</a>
-                <a href="#" class="header-link">О нас</a>
-                <a href="#footer-left-adress" class="header-link">Контакты</a>
+                <a id="header-navigation-main" href="#" class="header-links">Главная</a>
+                <a id="header-navigation-about-us" href="#" class="header-links">О нас</a>
+                <a id="header-navigation-contacts" href="#footer-left-adress" class="header-links">Контакты</a>
             </div>
         </div>
-        <div class="picture"></div>
+        <div class="picture">
+            <div class="picture-social-icons">
+                <img src="images/social-icons/email.png" alt="email">
+                <img src="images/social-icons/telegram.png" alt="telegram">
+                <img src="images/social-icons/whatsapp.png" alt="whatsapp">
+            </div>  
+            <div class="picture-text">
+                <p>
+                    Только красивые путешествия!
+                </p>
+                <p id="picture-text-button">
+                    присоединяйся!
+                </p>
+            </div>          
+        </div>
         <h1>Путешевствуй красиво! Блог в фотографиях</h1>
         <div class="content">
             <p>Представьте себе все лучшее, что есть в России: широкие просторы, разнообразная природа, щедрая душа, девушки особой красоты, баня в конце концов. Добавьте к этому все то, чем так привлекательна Москва: гастрономические рестораны, безудержные вечеринки, звезды ТВ и инстаграмма вокруг. Взболтайте, но не смешивайте и получите Розу Хутор 2017 – правильный баланс здорового лайфстайла и роскоши.</p>
@@ -28,8 +42,8 @@
             <div class="blocks-item">
                 <div class="blocks-russia"></div>
                 <div class="blocks-text">
-                    <h3>ПУТЕШЕСТВИЯ ПО РОССИИ</h3>
-                    <hr>
+                    <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО РОССИИ</h3>
+                    <!--<hr>-->
                     <p>
                         Самые интересные уголки России <br>
                         Самые необычные маршруты!
@@ -39,8 +53,7 @@
             <div class="blocks-item">
                 <div class="blocks-europa"></div>
                 <div class="blocks-text">
-                    <h3>ПУТЕШЕСТВИЯ ПО ЕВРОПЕ</h3>
-                    <hr>
+                    <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО ЕВРОПЕ</h3>
                     <p>
                         Разные страны, разные культуры, исторические места и все самое интересное в современной Европе!
                     </p> 
@@ -49,8 +62,7 @@
             <div class="blocks-item">
                 <div class="blocks-africa"></div>
                 <div class="blocks-text">
-                    <h3>ПУТЕШЕСТВИЯ ПО АФРИКЕ</h3>
-                    <hr>
+                    <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО АФРИКЕ</h3>
                     <p>
                         Дикая природа, крокодилы, обезьяны, сафари на джипах, гостиницы на деревьях и самые опасные приключения ждут тебя!
                     </p> 
@@ -59,8 +71,7 @@
             <div class="blocks-item">
                 <div class="blocks-north-america"></div>
                 <div class="blocks-text">
-                    <h3>ПУТЕШЕСТВИЯ ПО СЕВЕРНОЙ АМЕРИКЕ</h3>
-                    <hr>
+                    <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО СЕВЕРНОЙ АМЕРИКЕ</h3>
                     <p>
                         Конечно, мы проедем через всю Америку и побываем как в главных туристических местах, так и в уголках, гдепочти не ступала нога человека!
                     </p> 
@@ -69,8 +80,7 @@
             <div class="blocks-item">
                 <div class="blocks-south-america"></div>
                 <div class="blocks-text">
-                    <h3>ПУТЕШЕСТВИЯ ПО ЮЖНОЙ АМЕРИКЕ</h3>
-                    <hr>
+                    <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО ЮЖНОЙ АМЕРИКЕ</h3>
                     <p>
                         Южная Америка - место, где хочет побывать каждый. Богатые районы и заброшенные фавелы, опасности и приключения, темпераменьтные люди и многое другое на страницах наших путешествий!
                     </p> 
@@ -79,8 +89,7 @@
             <div class="blocks-item">
                 <div class="blocks-australia"></div>
                 <div class="blocks-text">
-                    <h3>ПУТЕШЕСТВИЯ ПО АВСТРАЛИИ</h3>
-                    <hr>
+                    <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО АВСТРАЛИИ</h3>
                     <p>
                         Мы побываем на отдельном континенте. Почему то думая об Австралии, сразу представляешь кенгуру, хотя это совершенно не символ страны!
                     </p> 
@@ -95,15 +104,23 @@
                 <p>E-mail: travel@mytravel.ru</p>
                 <p>Часы работы: пн-пт 10:00 - 18:00</p>
             </div>            
-            <a href="#body" id="footer-logo" class="footer-logo"></a>            
-            <div class="footer-right">      
+            <a id="footer-logo" href="#body" class="footer-logo"></a>
+            <div class="footer-right-links">
+                <a href="#" class="footer-right-links-style" >Путешествия по России</a>
+                <a href="#" class="footer-right-links-style" >Путешествия по Европе</a>
+                <a href="#" class="footer-right-links-style" >Путешествия по Африке</a>
+                <a href="#" class="footer-right-links-style" >Путешествия по Северной Америке</a>
+                <a href="#" class="footer-right-links-style" >Путешествия по Южной Америке</a>
+                <a href="#" class="footer-right-links-style" >Путешествия по Австралии</a>
+            </div>
+        <!--<div class="footer-right">      
                 <p><a href="#" class="footer-link">Путешествия по России</a></p>
                 <p><a href="#" class="footer-link">Путешествия по Европе</a></p>
                 <p><a href="#" class="footer-link">Путешествия по Африке</a></p>
                 <p><a href="#" class="footer-link">Путешествия по Северной Америке</a></p>
                 <p><a href="#" class="footer-link">Путешествия по Южной Америке</a></p>
                 <p><a href="#" class="footer-link">Путешествия по Австралии</a></p>
-            </div>            
+            </div>-->
         </div>
     </div>
 </body>

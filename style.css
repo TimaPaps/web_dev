@@ -1,9 +1,7 @@
-body {
-    margin: 0px;
-}
+@import url(normalize.css);
 
 .wrapper {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -14,12 +12,19 @@ body {
     background: rgba(0, 0, 139, 0.753);
     padding: 20px;
     border-bottom: 3px solid white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 .header-logo {
     background: url(images/logo.png) center center / contain no-repeat;
     padding: 16px;
-    margin-right: 15px;
     transition: 1100ms;
 }
 
@@ -27,21 +32,119 @@ body {
     transform: rotate(360deg);
 }
 
-.header-link {
+.header-links {
     color: white;
     text-decoration: none;
     margin-left: 15px;
     font-size: 20px;
+    position: relative;
+}
+.header-links:hover {
+    color: orange;
 }
 
-.header-link:hover {
-    text-decoration: underline;
-    color: orange;
+#header-navigation-main:hover:before {
+    width: 100%;
+}
+
+#header-navigation-main:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background: orange;
+    bottom: -3px;
+    transition: 700ms;
+}
+
+#header-navigation-about-us:hover:before {
+    width: 100%;
+}
+
+#header-navigation-about-us:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 2px;
+    width: 0%;
+    background: orange;
+    bottom: -3px;
+    transition: 700ms;
+}
+
+#header-navigation-contacts:hover:before {
+    width: 100% ;
+}
+
+#header-navigation-contacts:before {
+    content: "";
+    position: absolute;    
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 2px;
+    width: 0%;
+    background: orange;
+    bottom: -3px;
+    transition: 700ms;
 }
 
 .picture {
     background: url(images/main.jpg) center center / cover no-repeat;
     height: 500px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.picture-social-icons {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.picture-social-icons img {
+    width: 30px;
+    margin: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid orange;
+}
+
+.picture-text {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+#picture-text-button {
+    background: rgba(0, 0, 139, 0.753);
+    font-size: 25px;
+    max-width: 50%;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#picture-text-button:hover:before {
+    left: 100%;
+    transform: rotate(180deg);
+}
+
+#picture-text-button:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background: orange;
+    left: 0;
+    transition: 700ms;
 }
 
 h1 {
@@ -109,12 +212,30 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    position: relative;
+}
+
+.h3-style:before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    margin: 0 auto;
+    height: 3px;
+    width: 20%;
+    background: orange;
+    bottom: -12px;
+}
+
+/*
 hr {
     border: 0;
     height: 2px;
     background: orange;
     width: 50px;
 }
+*/
 
 .footer {
     background-color:  rgba(0, 0, 139, 0.753);
@@ -128,6 +249,7 @@ hr {
 
 #footer-left-h2 {
     color: orange;
+    font-size: 30px;
 }
 
 #footer-left-adress {
@@ -136,7 +258,7 @@ hr {
 
 .footer-logo {
     background: url(images/logo.png) center center / contain no-repeat;
-    width: 100px;
+    width: 50px;
     transition: 1100ms;
 }
 
@@ -144,6 +266,39 @@ hr {
     transform: rotate(-360deg);
 }
 
+.footer-right-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-right-links a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.8;
+    position: relative;
+}
+
+.footer-right-links-style:hover {
+    color: orange;
+}
+
+.footer-right-links-style:hover:before {
+   width: 100%; 
+}
+
+.footer-right-links-style:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 1px;
+    width: 0%;
+    bottom: 3px;
+    background: orange;
+    transition: 700ms;
+}
+
+/*
 .footer-right {
     text-align: right;
 }
@@ -157,7 +312,4 @@ hr {
     text-decoration: underline;
     color: orange;
 }
-
-h2 {
-  font-size: 30px;
-}
+*/
