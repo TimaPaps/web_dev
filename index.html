@@ -33,7 +33,7 @@
                     присоединяйся!
                 </p>
             </div>  
-            <div class="picture-scroll-down"></div>        
+            <div class="picture-scroll-down"></div>    
         </div>
         <h1>Путешевствуй красиво! Блог в фотографиях</h1>
         <div class="content">
@@ -89,6 +89,7 @@
                 </p> 
             </div>
         </div>
+        
         <div class="footer">
             <div class="footer-left">
                 <h2 id="footer-left-h2" >Мы рядом с Вами:</h2>
@@ -114,6 +115,33 @@
                 <p><a href="#" class="footer-link">Путешествия по Южной Америке</a></p>
                 <p><a href="#" class="footer-link">Путешествия по Австралии</a></p>
             </div>-->
+        </div>
+    </div>
+    <div class="form-message">
+        <div class="form-message-block">
+            <div class="form-message-block-logo"></div>                
+                <h4>Напишите нам:</h4>
+                <form action="form.php" method="GET" autocomplete="off">
+                    <div class="form-item">
+                    <input type="text" name="fullName" maxlength="50" placeholder="ФИО" required>
+                    </div>
+                    <div class="form-item">
+                        <input type="email" name="email" maxlength="50" placeholder="Email" required>
+                    </div>
+                    <div class="form-item">
+                        <input type="number" name="phone" min="0" max="99999999999" placeholder="Телефон" required>
+                    </div>
+                    <div class="form-item">                            
+                        <textarea name="textMessage" id="" maxlength="300" placeholder="Ваше сообщение" required></textarea>
+                    </div>
+                    <div class="form-item">
+                        <input type="submit" value="Отправить письмо">
+                    </div>
+                    <div class="form-item">
+                        <input type="reset">    
+                    </div>                
+                </form> 
+            <div class="form-message-block-botton"></div>                                   
         </div>
     </div>
 </body>
