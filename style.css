@@ -6,6 +6,7 @@
     padding-top: 75px;
 }
 
+/*блок header*/
 .header {
     display: flex;
     align-items: center;
@@ -68,21 +69,9 @@
     right: 0;
     margin: 0 auto;   
 }
+/*конец блока header*/
 
-/*#header-navigation-main:hover:before {
-    width: 100%;
-}
-
-#header-navigation-main:before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 0%;
-    background: orange;
-    bottom: -3px;
-    transition: 700ms;
-}*/
-
+/*блок: фоновая картинка*/
 .picture {
     background: url(images/main.jpg) center center / cover no-repeat;
     height: 500px;
@@ -121,7 +110,6 @@
     }
     50% {
         opacity: 1;
-        /*transform: translate(-25px, -25px) ;*/
     }
     100% {
         opacity: 0;
@@ -145,8 +133,7 @@
     }
     100% {
         transform: translate(1px, -1px);
-    }
-  
+    }  
 }
 
 .picture-text {
@@ -233,6 +220,7 @@
         transform: translateY(3px) rotate(45deg);
     }
 }
+/*конец блока: фоновая картинка*/
 
 h1 {
     text-align: center;
@@ -242,6 +230,7 @@ h1 {
     padding: 15px;
 }
 
+/*блок: основное содержимое страницы*/
 .content {
     padding: 40px;
     border-left: 4px solid  rgba(0, 0, 139, 0.753);
@@ -249,7 +238,9 @@ h1 {
     font-size: 18px;
     background-color: powderblue;
 }
+/*конец блока: основное содержимое страницы*/
 
+/* блок блоков*/
 .blocks {
     display: flex;
     flex-wrap: wrap;
@@ -269,11 +260,6 @@ h1 {
     height: 150px;
 }
 
-/*.blocks-russia {
-    background: url(images/moscow.png) center center / contain no-repeat;
-    height: 150px;
-}*/
-
 h3 {
     position: relative;
 }
@@ -289,16 +275,9 @@ h3 {
     background: orange;
     bottom: -12px;
 }
+/*конец блока блоков*/
 
-/*
-hr {
-    border: 0;
-    height: 2px;
-    background: orange;
-    width: 50px;
-}
-*/
-
+/*блок footer*/
 .footer {
     background-color:  rgba(0, 0, 139, 0.753);
     color: white;
@@ -359,23 +338,9 @@ hr {
     background: orange;
     transition: 700ms;
 }
+/*конец блока footer*/
 
-/*
-.footer-right {
-    text-align: right;
-}
-
-.footer-link {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-link:hover {
-    text-decoration: underline;
-    color: orange;
-}
-*/
-
+/*блок: форма сообщения*/
 .form-message {
     background: rgba(0, 255, 21, 0.233);
     position: fixed;
@@ -393,7 +358,8 @@ hr {
     background: rgb(255, 255, 255);
     position: absolute;
     padding: 20px 30px;
-    border: 2px solid orange;    
+    border: 2px solid orange; 
+    width: 400px;
 }
 
 .form-message-block-logo {
@@ -423,7 +389,7 @@ textarea {
     border: 1px solid orange;
     box-sizing: border-box;
     padding: 5px;
-    width: 400px;
+    width: 100%;
 }
 
 textarea {   
@@ -443,7 +409,7 @@ textarea {
     border: 1px solid rgba(0, 0, 139, 0.753);
     padding: 1px;
     cursor: pointer;
-    width: 400px;
+    width: 100%;
 }
 
 .form-message-block-botton {
@@ -476,3 +442,4 @@ textarea {
     top: 7px;
     left: 6px;
 }
+/*конец блока: форма сообщения*/
