@@ -251,7 +251,7 @@ h1 {
 
 .blocks-item {
     padding:  10px;
-    border: 2px solid  rgba(0, 0, 139, 0.753);
+    border: 2px solid  rgba(72, 72, 121, 0.753);
     width: 33.33333%;
     text-align: center;
     box-sizing: border-box;
@@ -279,6 +279,31 @@ h3 {
     bottom: -12px;
 }
 /*конец блока блоков*/
+
+/*блок main-form-open*/
+.main-form-open{
+    background: powderblue;
+    padding: 60px 30px;
+    text-align: center;
+    border-left: 4px solid  rgba(0, 0, 139, 0.753);
+    border-right: 4px solid  rgba(0, 0, 139, 0.753);
+}
+
+.main-form-open-text {
+    margin: 0 0 20px 0;
+}
+
+.main-form-open-btn {
+    background: rgba(0, 0, 139, 0.753);
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px 100px;
+    border: 2px solid orange;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+/*конец блока main-form-open*/
 
 /*блок footer*/
 .footer {
@@ -357,7 +382,7 @@ h3 {
 
 /*блок: форма сообщения*/
 .form-message {
-    background: rgba(0, 255, 21, 0.233);
+    background: rgba(0, 38, 255, 0.418);
     position: fixed;
     left: 0;
     top: 0; 
@@ -367,6 +392,7 @@ h3 {
     justify-content: center;
     align-items: center;
     z-index: 1;
+    display: none;
 }
 
 .form-message-block {
