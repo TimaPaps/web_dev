@@ -3,7 +3,7 @@
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 82px;
+    padding-top: 85px;
 }
 
 /*блок header*/
@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     background: rgba(0, 0, 139, 0.753);
+    height: 85px;
     padding: 20px;
     border-bottom: 3px solid rgb(255, 0, 0);
     position: fixed;
@@ -150,6 +151,7 @@
     display: inline-block;
     padding: 10px 30px;
     position: relative;
+    cursor: pointer;
 }
 
 #picture-text-button:hover:before {
@@ -455,7 +457,7 @@ textarea {
     width: 100%;
 }
 
-.form-message-block-botton {
+.form-message-block-button {
     position: absolute;
     background-color: orange;
     height: 19px;
@@ -464,7 +466,7 @@ textarea {
     right: -10px;
 }
 
-.form-message-block-botton:before {
+.form-message-block-button:before {
     content: "";
     position: absolute;
     height: 16px;
@@ -475,7 +477,7 @@ textarea {
     right: 6px;
 }
 
-.form-message-block-botton:after {
+.form-message-block-button:after {
     content: "";
     position: absolute;
     height: 16px;
