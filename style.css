@@ -307,6 +307,36 @@ h3 {
 }
 /*конец блока main-form-open*/
 
+/*блок faq*/
+.faq {
+    background: powderblue;
+    border: 4px solid rgba(0, 0, 139, 0.753);
+    padding: 60px;
+    font-size: 20px;
+}
+
+.faq-item {
+    border: 4px solid rgba(0, 0, 139, 0.753);
+    margin-bottom: 20px;
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
+.faq-item-question {
+    background: rgba(0, 0, 139, 0.753);
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.faq-item-answer {
+    padding: 10px 30px;
+    display: none;
+}
+/*конец блока faq*/
+
 /*блок footer*/
 .footer {
     background-color:  rgba(0, 0, 139, 0.753);
@@ -381,6 +411,19 @@ h3 {
     transition: 700ms;
 }
 /*конец блока footer*/
+
+/*блок стрелка вверх для скрола*/
+.up-arrow {
+    background: url(/images/up-arrow.svg) center center / contain no-repeat;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    right: -30px;
+    bottom: 95px;
+    z-index: 2;
+    cursor: pointer;
+}
+/*конец блока стрелка вверх для скрола*/
 
 /*блок: форма сообщения*/
 .form-message {
@@ -488,3 +531,64 @@ textarea {
     left: 6px;
 }
 /*конец блока: форма сообщения*/
+
+/*блок cookies*/
+.cookies {
+    background: rgba(0, 0, 139, 0.753);
+    position: fixed;
+    height: 85px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    border-top: 3px solid red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.cookies-logo {
+    background: url(/images/logo.png) center center / contain no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+.cookies-text {
+    padding: 0 100px;
+}
+
+.cookies-btn {
+    background: orange;
+    padding: 5px 30px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.cookies-btn-close {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-left: 2px solid white;
+    top: 10px;
+    right: 10px;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.cookies-btn-close:before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 8px;
+    bottom: -8px;
+    border-top: 2px solid white;
+    box-sizing: border-box;
+}
+/*конец блока cookies*/
