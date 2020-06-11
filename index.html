@@ -136,18 +136,18 @@
             <div class="form-message-block">
                 <div class="form-message-block-logo"></div>                
                 <h4>Напишите нам:</h4>
-                <form action="https://form.php" method="GET" autocomplete="off">
+                <form id="questionForm" action="https://form.php" method="GET" autocomplete="off">
                     <div class="form-item">
-                        <input type="text" name="fullName" maxlength="50" placeholder="ФИО" required>
+                        <input type="text" name="fullName" maxlength="100" placeholder="ФИО">
                     </div>
                     <div class="form-item">
-                        <input type="email" name="email" maxlength="50" placeholder="Email" required>
+                        <input type="email" name="email" maxlength="100" placeholder="Email">
                     </div>
                     <div class="form-item">
-                        <input type="number" name="phone" min="0" max="99999999999" placeholder="Телефон" required>
+                        <input type="number" name="phone" min="0" max="999999999999999999999999999999" placeholder="Телефон">
                     </div>
                     <div class="form-item">                            
-                        <textarea name="textMessage" id="" maxlength="300" placeholder="Ваше сообщение" required></textarea>
+                        <textarea name="textMessage" id="" maxlength="300" placeholder="Ваше сообщение"></textarea>
                     </div>
                     <div class="form-item">
                         <input type="submit" value="Отправить письмо">
@@ -174,5 +174,6 @@
     <script src="jquery-3.5.1.min.js"></script>
     <script src="script.js"></script>
     <script src="new.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>
