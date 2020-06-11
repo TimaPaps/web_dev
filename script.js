@@ -27,8 +27,11 @@ $('.up-arrow').click(function(){
 $('#header-navigation-about-us').click(function(e){
     e.preventDefault();
 
+    let offSet = $('.blocks').offset().top;
+    let outHeight = $('.header').outerHeight();
+
     $('html, body').animate({
-        scrollTop: $('.blocks').offset().top - $('.header').outerHeight()
+        scrollTop: offSet - outHeight
     }, 750);
 });
 //конец скрола страницы вниз до до блока blocks при клике на Вопросы и ответы
@@ -43,8 +46,11 @@ $('.faq-item-question').click(function(){
 $('.header-navigation-question-answer').click(function(e){
     e.preventDefault();
 
+    let offSet = $('.faq').offset().top;
+    let outHeight = $('.header').outerHeight();
+
     $('html, body').animate({
-        scrollTop: $('.faq').offset().top - $('.header').outerHeight()
+        scrollTop: offSet - outHeight
     }, 750);
 });
 //конец скрола страницы вниз до до блока faq при клике на Вопросы и ответы
