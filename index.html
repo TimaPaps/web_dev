@@ -138,16 +138,16 @@
                 <h4>Напишите нам:</h4>
                 <form id="questionForm" action="https://form.php" method="GET" autocomplete="off">
                     <div class="form-item">
-                        <input type="text" name="fullName" maxlength="100" placeholder="ФИО">
+                        <input data-length="30" type="text" name="fullName" placeholder="ФИО">
                     </div>
                     <div class="form-item">
-                        <input type="email" name="email" maxlength="100" placeholder="Email">
+                        <input data-length="25" type="email" name="email" placeholder="Email">
                     </div>
                     <div class="form-item">
-                        <input type="number" name="phone" min="0" max="999999999999999999999999999999" placeholder="Телефон">
+                        <input data-length="15" type="number" name="phone" placeholder="Телефон">
                     </div>
                     <div class="form-item">                            
-                        <textarea name="textMessage" id="" maxlength="300" placeholder="Ваше сообщение"></textarea>
+                        <textarea data-length="50" name="textMessage" placeholder="Ваше сообщение"></textarea>
                     </div>
                     <div class="form-item">
                         <input type="submit" value="Отправить письмо">

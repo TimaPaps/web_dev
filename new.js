@@ -16,22 +16,21 @@ if (counter < 1) {
 console.log(`Мне ${counter}`);
 */
 
-//проверка возраста
+//проверка возраста универсальная для любых чисел
+/*
 let age = prompt("Укажи сколько тебе лет: ");
 let twoLastNumber = age % 100;
 let lastNumber = age % 10;
-let word;
+let word = "лет";
 
-if (twoLastNumber == 11 || twoLastNumber == 12 || 
-    twoLastNumber == 13 || twoLastNumber == 14) {
+if (twoLastNumber >= 11 && twoLastNumber <= 14) {
     word = "лет";
 } else if (lastNumber == 1) {
     word = "год";
 } else if (lastNumber >= 2 && lastNumber <=4) {
     word = "года";
-} else {
-    word = "лет"
 }
 
 console.log(`Мне ${age} ${word}`);
 console.log("");
+*/
