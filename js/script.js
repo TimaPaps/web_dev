@@ -58,7 +58,28 @@ $('.header-navigation-question-answer').click(function(e){
 //анимация cookies
 $('.cookies-btn, .cookies-btn-close').click(function(){
     $(this).parents('.cookies').animate({
-        'bottom': '-85px'
+        'bottom': '-185px'
     }, 750);
 });
 //конец анимации cookies
+
+//кнопка выползающего меню
+let countMenuButton = 0;
+$('.menu-button').click(function() {
+
+console.log(countMenuButton);
+
+    if (countMenuButton == 0) {
+        countMenuButton++;
+        $('.header-navigation').animate({
+            'left': 0,
+        });
+    } else {
+        countMenuButton--;
+        $('.header-navigation').animate({
+            'left': -100 + "%",
+        });
+    }
+   
+});
+//конец: кнопка выползающего меню

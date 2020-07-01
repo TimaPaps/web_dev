@@ -71,6 +71,14 @@
     right: 0;
     margin: 0 auto;   
 }
+
+.menu-button {
+    background: url(/images/menu.svg) center center / contain no-repeat;
+    height: 40px;
+    width: 40px;
+    display: none;
+    z-index: 1;
+}
 /*конец блока header*/
 
 /*блок: фоновая картинка*/
