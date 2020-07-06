@@ -46,6 +46,9 @@
 }
 
 @media (min-width: 701px) and (max-width: 1000px) {
+    .header-links {
+        font-size: 16px;
+    }
     .footer-logo {
         display: none;
     }
@@ -65,5 +68,8 @@
 }
 
 @media (min-width: 1001px) {
-
+    .header-links {
+        margin-left: 55px;
+        transition: 0.5s;
+    }
 }

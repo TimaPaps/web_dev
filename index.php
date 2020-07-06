@@ -1,31 +1,27 @@
+<?php
+    $title = 'Главная страница сайта';
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Страница с изображениями</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media-queries.css">
+    <title><?php echo "$title" ?></title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/media-queries.css">
 </head>
 <body id="body">
     <div class="wrapper">
-        <header class="header">
-            <a href="#footer-logo" class="header-logo"></a>
-            <nav class="header-navigation">
-                <a id="header-navigation-main" href="#" class="header-links">Главная</a>
-                <a id="header-navigation-about-us" href="#" class="header-links header-links-right">О нас</a>
-                <a href="#" class="header-links header-navigation-form-open">Оставить заявку</a>
-                <a href="#" class="header-links header-links-right header-navigation-question-answer">Вопросы и ответы</a>
-                <a id="header-navigation-contacts" href="#footer-left-adress" class="header-links header-links-center">Контакты</a>
-            </nav>
-            <dic class="menu-button"></dic>
-        </header>
+        <?php
+            include('inc/header.php');
+        ?>
         <main>
             <div class="picture">
                 <div class="picture-social-icons">
-                    <img src="images/social-icons/email.png" alt="email">
-                    <img src="images/social-icons/telegram.png" alt="telegram">
-                    <img src="images/social-icons/whatsapp.png" alt="whatsapp">
+                    <img src="/images/social-icons/email.png" alt="email">
+                    <img src="/images/social-icons/telegram.png" alt="telegram">
+                    <img src="/images/social-icons/whatsapp.png" alt="whatsapp">
                 </div>  
                 <div class="picture-rocket">
                     <div class="picture-fire"></div>
@@ -50,7 +46,7 @@
                 </div>
                 <div class="blocks">                    
                     <section class="blocks-item">
-                        <img src="images/moscow.png" alt="Москва">
+                        <img src="/images/moscow.png" alt="Москва">
                         <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО РОССИИ</h3>
                         <p>
                             Самые интересные уголки России <br>
@@ -58,35 +54,35 @@
                         </p>                
                     </section>            
                     <section class="blocks-item">
-                        <img src="images/big-ben.png" alt="Биг-Бен">
+                        <img src="/images/big-ben.png" alt="Биг-Бен">
                         <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО ЕВРОПЕ</h3>
                         <p>
                             Разные страны, разные культуры, исторические места и все самое интересное в современной Европе!
                         </p> 
                     </section>
                     <section class="blocks-item">
-                        <img src="images/pyramids.png" alt="Пирамиды">
+                        <img src="/images/pyramids.png" alt="Пирамиды">
                         <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО АФРИКЕ</h3>
                         <p>
                             Дикая природа, крокодилы, обезьяны, сафари на джипах, гостиницы на деревьях и самые опасные приключения ждут тебя!
                         </p> 
                     </section>
                     <section class="blocks-item">
-                        <img src="images/north-america.png" alt="Северная Америка">
+                        <img src="/images/north-america.png" alt="Северная Америка">
                         <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО СЕВЕРНОЙ АМЕРИКЕ</h3>
                         <p>
                             Конечно, мы проедем через всю Америку и побываем как в главных туристических местах, так и в уголках, гдепочти не ступала нога человека!
                         </p> 
                     </section>
                     <section class="blocks-item">
-                        <img src="images/south-america.png" alt="Южная Америка">
+                        <img src="/images/south-america.png" alt="Южная Америка">
                         <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО ЮЖНОЙ АМЕРИКЕ</h3>
                         <p>
                             Южная Америка - место, где хочет побывать каждый. Богатые районы и заброшенные фавелы, опасности и приключения, темпераменьтные люди и многое другое на страницах наших путешествий!
                         </p> 
                     </section>
                     <section class="blocks-item">
-                        <img src="images/kangaroo.png" alt="Австралия">
+                        <img src="/images/kangaroo.png" alt="Австралия">
                         <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО АВСТРАЛИИ</h3>
                         <p>
                             Мы побываем на отдельном континенте. Почему то думая об Австралии, сразу представляешь кенгуру, хотя это совершенно не символ страны!
@@ -115,70 +111,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="footer-left">
-                <h2 id="footer-left-h2" >Мы рядом с Вами:</h2>
-                <p id="footer-left-adress" >Москва, ул. Комсомола 12 оф.234</p>
-                <p>Тел: 8(495)123-45-67</p>
-                <p>E-mail: travel@mytravel.ru</p>
-                <p>Часы работы: пн-пт 10:00 - 18:00</p>
-            </div>            
-            <a id="footer-logo" href="#body" class="footer-logo"></a>
-            <nav class="footer-right-links">
-                <a href="#" class="footer-right-links-style" >Путешествия по России</a>
-                <a href="#" class="footer-right-links-style" >Путешествия по Европе</a>
-                <a href="#" class="footer-right-links-style" >Путешествия по Африке</a>
-                <a href="#" class="footer-right-links-style" >Путешествия по Северной Америке</a>
-                <a href="#" class="footer-right-links-style" >Путешествия по Южной Америке</a>
-                <a href="#" class="footer-right-links-style" >Путешествия по Австралии</a>
-            </nav>
-        </footer>
-        <div class="up-arrow"></div>
-        <section class="form-message">
-            <div class="form-message-block">
-                <div class="form-message-block-logo"></div>                
-                <h4>Напишите нам:</h4>
-                <form id="questionForm" action="https://form.php" method="GET" autocomplete="off">
-                    <div class="form-item">
-                        <input data-length="30" type="text" name="fullName" placeholder="ФИО">
-                    </div>
-                    <div class="form-item">
-                        <input data-length="25" type="email" name="email" placeholder="Email">
-                    </div>
-                    <div class="form-item">
-                        <input data-length="15" type="number" name="phone" placeholder="Телефон">
-                    </div>
-                    <div class="form-item">                            
-                        <textarea data-length="50" name="textMessage" placeholder="Ваше сообщение"></textarea>
-                    </div>
-                    <div class="form-item">
-                        <input type="submit" value="Отправить письмо">
-                    </div>
-                    <div class="form-item">
-                        <input type="reset">    
-                    </div>                
-                </form> 
-                <div class="form-message-block-button"></div>                                   
-            </div>
-        </section>
-        <div class="cookies">
-            <div class="cookies-logo"></div>
-            <div class="cookies-text">
-                <p>
-                    Наш сайт использует файлы cookies для получения <br>
-                    статистики и улучшения качества работы сайта
-                </p>
-            </div>
-            <div class="cookies-btn">я понял</div>
-            <div class="cookies-btn-close"></div>
-        </div>
-    </div>
-    <script src="/js/jquery-3.5.1.min.js"></script>
-    <script src="/js/script.js"></script>
-    <script src="/js/new.js"></script>
-    <script src="/js/form.js"></script>
-    <!--<script src="/js/tasks.js"></script>
-    <script src="/js/game.js"></script>
-    <script src="/js/gamenumber.js"></script>-->
-</body>
-</html>
+<?php
+    include('inc/form.php');
+    include('inc/footer.php');
+?>
