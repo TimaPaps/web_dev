@@ -58,10 +58,22 @@ while (userWord.join('') != wordGame.join('')) {
             //letterMassiv.splice(index, 1, value);
         } else {
             letterMassiv.push(letter);
+            count1++; 
     }
 
+// не рабочая версия через цикл проверки буквы на повторный ввод
+    /*letterMassiv.forEach(function(value, index){
+        if (exist) {
+            alert(`Такая буква уже была!`);
+            //letterMassiv.splice(index, 1, value);
+        } else {
+            letterMassiv.push(letter);
+            count1++;   
+        }
+    });*/
+
 // увеличиваем счетчик после каждого ввода буквы
-    count1++;    
+     
     console.log(letterMassiv);
     console.log(count1);
     console.log(attempt);       
