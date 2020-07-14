@@ -1,13 +1,63 @@
 <?php
     $title = 'Главная страница сайта';
+
+    //заполняем блоки данными
+    $tripItems = [
+        0 => [
+            'h3' => 'ПУТЕШЕСТВИЯ ПО РОССИИ',
+            'picture' => '/images/moscow.png',
+            'text' => 'Самые интересные уголки России <br> Самые необычные маршруты!'
+        ],
+        1 => [
+            'h3' => 'ПУТЕШЕСТВИЯ ПО ЕВРОПЕ',
+            'picture' => '/images/big-ben.png',
+            'text' => 'Разные страны, разные культуры, исторические места и все самое интересное в современной Европе!'
+        ],
+        2 => [
+            'h3' => 'ПУТЕШЕСТВИЯ ПО АФРИКЕ',
+            'picture' => '/images/pyramids.png',
+            'text' => 'Дикая природа, крокодилы, обезьяны, сафари на джипах, гостиницы на деревьях и самые опасные приключения ждут тебя!'
+        ],
+        3 => [
+            'h3' => 'ПУТЕШЕСТВИЯ ПО СЕВЕРНОЙ АМЕРИКЕ',
+            'picture' => '/images/north-america.png',
+            'text' => 'Конечно, мы проедем через всю Америку и побываем как в главных туристических местах, так и в уголках, гдепочти не ступала нога человека!'
+        ],
+        4 => [
+            'h3' => 'ПУТЕШЕСТВИЯ ПО ЮЖНОЙ АМЕРИКЕ',
+            'picture' => '/images/south-america.png',
+            'text' => 'Южная Америка - место, где хочет побывать каждый. Богатые районы и заброшенные фавелы, опасности и приключения, темпераменьтные люди и многое другое на страницах наших путешествий!'
+        ],
+        5 => [
+            'h3' => 'ПУТЕШЕСТВИЯ ПО АВСТРАЛИИ',
+            'picture' => '/images/kangaroo.png',
+            'text' => 'Мы побываем на отдельном континенте. Почему то думая об Австралии, сразу представляешь кенгуру, хотя это совершенно не символ страны!'
+        ]
+    ];
+
+    //заполняем шапку - вопрос-ответ
+    $faqItems = [
+        [
+        'question' => 'Вопрос 1',
+        'answer' => 'Ответ 1'
+        ],
+        [
+        'question' => 'Вопрос 2',
+        'answer' => 'Ответ 2'
+        ],
+        [
+        'question' => 'Вопрос 3',
+        'answer' => 'Ответ 3'
+        ]
+    ]
 ?>
 
-<?php
+<?php //подключаем head и doctype
     include('inc/head-doctype.php');
 ?>
 <body id="body">
     <div class="wrapper">
-        <?php
+        <?php //подключаем header
             include('inc/header.php');
         ?>
         <main>
@@ -38,74 +88,36 @@
                     <p>Более того, несмотря на весну за окном, успеть все это оценить лично совсем не поздно – рекордное количество снега обещает продлить сезон на весь апрель, а курорт тем временем предлагает на этот период очень привлекательные цены!</p>
                     <p>В общем, какое бы время вы ни выбрали, Роза Хутор удивит и подарит желание говорить о России с восторгом!</p>
                 </div>
-                <div class="blocks">                    
+
+                <!--//заполняем блоки данными-->
+                <div class="blocks">    
+                    <?php foreach($tripItems as $key => $value): ?>                
                     <section class="blocks-item">
-                        <img src="/images/moscow.png" alt="Москва">
-                        <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО РОССИИ</h3>
-                        <p>
-                            Самые интересные уголки России <br>
-                            Самые необычные маршруты!
-                        </p>                
+                        <img src="<?php echo $value['picture'] ?>" alt="Москва">
+                        <h3 class="h3-style"><?= $value['h3'] ?></h3>
+                        <p><?= $value['text'] ?></p>                
                     </section>            
-                    <section class="blocks-item">
-                        <img src="/images/big-ben.png" alt="Биг-Бен">
-                        <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО ЕВРОПЕ</h3>
-                        <p>
-                            Разные страны, разные культуры, исторические места и все самое интересное в современной Европе!
-                        </p> 
-                    </section>
-                    <section class="blocks-item">
-                        <img src="/images/pyramids.png" alt="Пирамиды">
-                        <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО АФРИКЕ</h3>
-                        <p>
-                            Дикая природа, крокодилы, обезьяны, сафари на джипах, гостиницы на деревьях и самые опасные приключения ждут тебя!
-                        </p> 
-                    </section>
-                    <section class="blocks-item">
-                        <img src="/images/north-america.png" alt="Северная Америка">
-                        <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО СЕВЕРНОЙ АМЕРИКЕ</h3>
-                        <p>
-                            Конечно, мы проедем через всю Америку и побываем как в главных туристических местах, так и в уголках, гдепочти не ступала нога человека!
-                        </p> 
-                    </section>
-                    <section class="blocks-item">
-                        <img src="/images/south-america.png" alt="Южная Америка">
-                        <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО ЮЖНОЙ АМЕРИКЕ</h3>
-                        <p>
-                            Южная Америка - место, где хочет побывать каждый. Богатые районы и заброшенные фавелы, опасности и приключения, темпераменьтные люди и многое другое на страницах наших путешествий!
-                        </p> 
-                    </section>
-                    <section class="blocks-item">
-                        <img src="/images/kangaroo.png" alt="Австралия">
-                        <h3 class="h3-style">ПУТЕШЕСТВИЯ ПО АВСТРАЛИИ</h3>
-                        <p>
-                            Мы побываем на отдельном континенте. Почему то думая об Австралии, сразу представляешь кенгуру, хотя это совершенно не символ страны!
-                        </p> 
-                    </section>
+                    <?php endforeach; ?>
                 </div>
+                
                 <section class="main-form-open">
                     <h2 class="main-form-open-text">Отправьте нам вопрос и мы ответим в ближайшее время</h2>
                     <div class="main-form-open-btn">
                         отправить вопрос
                     </div>
                 </section>
+                <!--//заполняем шапку - вопрос-ответ-->
                 <div class="faq">
+                    <?php foreach($faqItems as $key => $value): ?>
                     <div class="faq-item">
-                        <div class="faq-item-question">Вопрос</div>
-                        <div class="faq-item-answer">Ответ</div>
+                        <div class="faq-item-question"><?= $value['question'] ?></div>
+                        <div class="faq-item-answer"><?= $value['answer'] ?></div>
                     </div>
-                    <div class="faq-item">
-                        <div class="faq-item-question">Вопрос</div>
-                        <div class="faq-item-answer">Ответ</div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-item-question">Вопрос</div>
-                        <div class="faq-item-answer">Ответ</div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </section>
         </main>
-<?php
+<?php //подключаем form и footer
     include('inc/form.php');
     include('inc/footer.php');
 ?>
