@@ -25,12 +25,12 @@
                         <select name="trips[]" id="">
                         <option hidden>--Выбери своё путешествие--</option>
                             <optgroup label="--Мы предлагаем: --">
-                                <option value="России">Путешествия по России</option>
-                                <option value="Европе">Путешествия по Европе</option>
-                                <option value="Африке">Путешествия по Африке</option>
-                                <option value="Северной Америке">Путешествия по Северной Америке</option>
-                                <option value="Южной Америке">Путешествия по Южной Америке</option>
-                                <option value="Австралии">Путешествия по Австралии</option> 
+                                <option value="form-background-moscow">Путешествия по России</option>
+                                <option value="form-background-big-ben">Путешествия по Европе</option>
+                                <option value="form-background-pyramids">Путешествия по Африке</option>
+                                <option value="form-background-north-america">Путешествия по Северной Америке</option>
+                                <option value="form-background-south-america">Путешествия по Южной Америке</option>
+                                <option value="form-background-kangaroo">Путешествия по Австралии</option> 
                             </optgroup>                           
                         </select>
                     </div>
