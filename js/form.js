@@ -1,4 +1,5 @@
 //проверка полей на содержимое перед отправкой сообщения
+/*
 $('#questionForm').submit(function(e) {
     $('.error').remove();
 
@@ -61,6 +62,7 @@ $('#questionForm').submit(function(e) {
     }
 });
 
+
 //один keyup для всех полей
 $('input, textarea').keyup(function(e) {
     let field = $(this);
@@ -81,6 +83,7 @@ $('input, textarea').keyup(function(e) {
         e.preventDefault();
     }
 });
+*/
 
 //закрытие окна сообщения нажатием клавишы Esc
 $(window).keyup(function(e) {

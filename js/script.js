@@ -23,7 +23,7 @@ $('.up-arrow').click(function(){
 });
 //конец анимации стрелки вверх и скрола страницы вверх
 
-//скрол страницы вниз до до блока blocks при клике на Вопросы и ответы
+//скрол страницы вниз до блока blocks при клике на Вопросы и ответы
 $('#header-navigation-about-us').click(function(e){
     e.preventDefault();
 
@@ -42,7 +42,7 @@ $('.faq-item-question').click(function(){
 });
 //конец вызова и скрытия поля ответа в faq
 
-//скрол страницы вниз до до блока faq при клике на Вопросы и ответы
+//скрол страницы вниз до блока faq при клике на Вопросы и ответы
 $('.header-navigation-question-answer').click(function(e){
     e.preventDefault();
 

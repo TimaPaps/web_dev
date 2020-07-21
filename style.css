@@ -605,3 +605,43 @@ textarea {
 .error {
     color: red;
 }
+
+/*блок окно с ответом для пользователя после отправки формы*/
+.window-answer {
+    padding: 30px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    background: lightblue;
+
+}
+
+.form-background-item {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 85px;
+}
+
+.form-background-moscow {
+    background: url(images/moscow.png) center center / contain no-repeat;    
+}
+.form-background-big-ben {
+    background: url(images/big-ben.png) center center / contain no-repeat;    
+}
+.form-background-pyramids {
+    background: url(images/pyramids.png) center center / contain no-repeat;    
+}
+.form-background-north-america {
+    background: url(images/north-america.png) center center / contain no-repeat;    
+}
+.form-background-south-america {
+    background: url(images/south-america.png) center center / contain no-repeat;    
+}
+.form-background-kangaroo {
+    background: url(images/kangaroo.png) center center / contain no-repeat;    
+}
+
+
+/*конец блока окно с ответом для пользователя после отправки формы*/
